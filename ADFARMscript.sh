@@ -4,7 +4,7 @@ STORAGE_KEY=$1
 
 az group deployment create \
     --resource-group datafactory \
-    --template-file DataFactory/ADFARM/ADFARM.json \
+    --template-file ADFARM.json \
     --parameters '{
       "dataFactoryName": {
         "value": "kodatafactory"
