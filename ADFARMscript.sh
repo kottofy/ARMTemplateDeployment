@@ -34,3 +34,4 @@ az group deployment create \
         "value": "outputblob.txt"
       }
     }'
+    
