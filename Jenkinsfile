@@ -22,7 +22,8 @@ pipeline {
       steps {
         sh '''
           chmod +x ${WORKSPACE}/ADFARMscript.sh
-          ${WORKSPACE}/ADFARMscript.sh \"${params.STORAGE_KEY}\"
+          ${WORKSPACE}/ADFARMscript.sh \
+           \"${params.STORAGE_KEY}\"
         '''
       }
     }
