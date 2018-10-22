@@ -20,10 +20,10 @@ pipeline {
 
     stage('deploy') {
       steps {
-        sh """
+        sh '''
           chmod +x ${WORKSPACE}/ADFARMscript.sh
           ${WORKSPACE}/ADFARMscript.sh ${params.STORAGE_KEY}
-        """
+        '''
       }
     }
 
