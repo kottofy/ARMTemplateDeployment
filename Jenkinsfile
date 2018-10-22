@@ -21,8 +21,6 @@ pipeline {
     stage('deploy') {
       steps {
         sh """
-         echo "${params.STORAGE_KEY} !"
-        
           chmod +x ${WORKSPACE}/ADFARMscript.sh
           ${WORKSPACE}/ADFARMscript.sh ${params.STORAGE_KEY}
         """
