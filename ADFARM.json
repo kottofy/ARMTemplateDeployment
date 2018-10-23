@@ -184,27 +184,7 @@
                     "type": "Microsoft.DataFactory/factories/triggers",
                     "apiVersion": "2018-06-01",
                     "properties": {
-                        "runtimeState": "Stopped",
-                        "type": "BlobEventsTrigger",
-                        "pipelines": [
-                            {
-                                "pipelineReference": {
-                                    "referenceName": "ArmtemplateSampleCopyPipeline",
-                                    "type": "PipelineReference"
-                                },
-                                "parameters": {}
-                            }
-                        ],
-                        "typeProperties": {
-                            "blobPathBeginsWith": "/files/",
-                            "scope": "/subscriptions/7ecb4edf-2400-4f42-87fc-4b4742fec97a/resourceGroups/datafactory/providers/Microsoft.Storage/storageAccounts/kodatafactorystorage",
-                            "events": [
-                                "Microsoft.Storage.BlobCreated"
-                            ]
-                        },
-                        "dependsOn": [
-                            "[concat(variables('factoryId'), '/pipelines/ArmtemplateSampleCopyPipeline')]"
-                        ]
+                        "type": "BlobEventsTrigger"
                     }
                 }
             ]
