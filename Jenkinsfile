@@ -24,7 +24,7 @@ pipeline {
           chmod +x ${WORKSPACE}/ADFARMscript.sh
           ${WORKSPACE}/ADFARMscript.sh ${params.STORAGE_KEY}
         """
-      }g
+      }
     }
 
   }
